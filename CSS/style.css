@@ -1,0 +1,163 @@
+/*
+
+Theme Name : My Folio
+Author     : My Folio
+Version    : 1.0.0
+
+
+Table Of Content
+===================================
+   1. Common Css
+   2. Nav Section
+   3. Banner Section
+*/
+
+/* Common Css start */
+h1,h2,h3,h4.h5,h6,
+p,
+ul,ol,
+small,
+span{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+body{
+ 
+    font-family: 'Open Sans', sans-serif;
+ }
+
+
+/* Common Css end */
+
+/* nav section css start */
+nav{
+    background: #02918C;
+}
+#main_menu ul li a{
+    color: #fff;
+    transition: 1s;
+}
+#main_menu ul li a:hover{
+    color: #CFC91D;
+}
+
+
+/* nav section css end */
+
+
+/* banner setion css start */
+
+
+#banner .banner_slider_item{
+    height: 728px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+}
+#banner .bannerContent h1,h4,p{
+    color: #fff;
+}
+#banner .banner_content h4{
+    font-size: 30px;
+    font-weight: 800;
+ }
+ 
+#banner .bannerContent p{
+    font-weight: 400;
+    font-size: 18px;
+}
+#banner .bannerContent h1{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 60px;
+    font-weight: 800;
+}
+#banner .banner_content img{
+    display: block;
+    margin: 52px auto;
+ }
+#banner .bannerContent a{
+    line-height: 50px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 15px 40px;
+    transition: .25s;
+    
+    
+}
+#banner .bannerContent a:hover{
+    color: #fff;
+}
+#banner .banner_slider_item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/*banner section css end */
+
+/* about sec css start */
+#about p{
+    color: #000;
+}
+#about h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+#about .about_item{
+    color:#7e8287;
+    border-right: 1px solid #d9dbdb;
+    padding: 37px 65px;
+ }
+ #about .about_item:last-child{
+    border-right-color: transparent;
+ }
+ #about .about_item h4{
+    font-size: 20px;
+ }
+ #about .about_item p{
+    font-size: 11px;
+    line-height: 20px;
+ }
+/* about sec css end */
+/* service section start */
+#service p{
+   color: #000;
+}
+#service{
+    padding: 65px 0;
+    background-image: url(./img/service.bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #7e8287;
+ }
+ #service h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+/* service section end */
+
